@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import homeReducer from './home/homeSlice';
+import { coinReducer, fetchCoins } from './coin/coinSlice';
+import detailReducer from './detail/detailSlice';
 
 const store = configureStore({
   reducer: {
-    home: homeReducer,
+    coins: coinReducer,
+    detail: detailReducer,
   },
 });
-
+store.dispatch(fetchCoins());
 export default store;
