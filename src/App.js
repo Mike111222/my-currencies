@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import Detail from './components/Detail';
+import CoinsList from './components/CoinsList';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<CoinsList />} />
           <Route exact path="detail" element={<Detail />} />
         </Routes>
       </div>
