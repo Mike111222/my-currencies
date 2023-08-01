@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 
 const Detail = () => {
   const coinDetail = useSelector((state) => state.detail.coinDetail);
-
   return (
     <div className="coinDetail">
       <h2 className="whiteColor detailHeading">Coin Detail</h2>
