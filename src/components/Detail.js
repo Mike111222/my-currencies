@@ -1,53 +1,38 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
-import { clearCoinDetail } from '../Redux/detail/detailSlice';
+import { useSelector } from 'react-redux';
 
 const Detail = () => {
-  const dispatch = useDispatch();
   const coinDetail = useSelector((state) => state.detail.coinDetail);
 
-  const handleGoBack = () => {
-    dispatch(clearCoinDetail());
-  };
-
-  if (!coinDetail) {
-    return <div>No coin selected.</div>;
-  }
-
   return (
-    <div>
-      <h2>Coin Detail</h2>
-      <NavLink to="/" onClick={handleGoBack}>
-        <button type="button">Go Back</button>
-      </NavLink>
-      <h3>{coinDetail.name}</h3>
-      <p>
+    <div className="coinDetail">
+      <h2 className="whiteColor detailHeading">Coin Detail</h2>
+      <h3 className="whiteColor">{coinDetail.name}</h3>
+      <p className="whiteColor bg-dark">
         Symbol:
         {' '}
         {coinDetail.symbol}
       </p>
-      <p>
+      <p className="whiteColor">
         Price:
         {' '}
-        {coinDetail.priceUsd}
+        {typeof coinDetail.priceUsd === 'number' ? coinDetail.priceUsd.toFixed(2) : parseFloat(coinDetail.priceUsd).toFixed(2)}
       </p>
-      <p>
+      <p className="whiteColor bg-dark">
         Rank:
         {' '}
         {coinDetail.rank}
       </p>
-      <p>
+      <p className="whiteColor">
         Market Cap:
         {' '}
         {coinDetail.marketCapUsd}
       </p>
-      <p>
+      <p className="whiteColor bg-dark">
         Volume:
         {' '}
         {coinDetail.volumeUsd24Hr}
       </p>
-      {/* Add other properties you want to display */}
     </div>
   );
 };
