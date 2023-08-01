@@ -73,7 +73,7 @@ APIs
 <details>
   <summary>API</summary>
   <ul>
-    <li><a href="https://api.coincap.io/v2/assets?limit=150">External API</a></li>
+    <li><a href="https://api.coincap.io/v2/assets?limit=100">External API</a></li>
   </ul>
 </details>
 
@@ -90,8 +90,10 @@ APIs
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [React Redux Capstone Project (Crypto Currencies)](https://crypto-currencies-vy9s.onrender.com)
+- [React Redux Capstone Project Live Link(Crypto Currencies)](https://crypto-currencies-vy9s.onrender.com)
 
+
+- [React Redux Capstone Project Live Demo(Crypto Currencies)](https://youtu.be/RY-1ZpnrTQw)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +119,7 @@ In order to run this project you need:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-https://github.com/fpsapc/crypto-currencies
+https://github.com/Mike111222/crypto-currencies
 ```
 
 - Navigate to the location of the folder in your machine:
