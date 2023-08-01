@@ -44,7 +44,6 @@ const CoinsList = () => {
 
   return (
     <div>
-      <div><arrowRightCircle /></div>
       <div className="searchContainer">
         <h2 className="whiteColor">Search Crypto Here</h2>
         <input
@@ -60,7 +59,7 @@ const CoinsList = () => {
         </button>
       </div>
       <div className="coinsList">
-        {coins.map((coin) => (
+        {coins.data.map((coin) => (
           <div key={coin.id} className="coinCard">
             <NavLink to="/detail" onClick={() => handleCoinClick(coin)}>
               <div className="rightArrow">
