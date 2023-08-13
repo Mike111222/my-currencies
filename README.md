@@ -90,7 +90,7 @@ APIs
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [React Redux Capstone Project Live Link(Crypto Currencies)](https://rad-pavlova-6069cd.netlify.app)
+- [React Redux Capstone Project Live Link(Crypto Currencies)](https://space-travelers-111222.netlify.app/)
 
 
 - [React Redux Capstone Project Live Demo(Crypto Currencies)](https://youtu.be/RY-1ZpnrTQw)
