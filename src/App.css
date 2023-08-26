@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: rgba(252, 81, 147, 255);
+  padding: 0 1rem;
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.coinsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+}
+
+.coinCard {
+  background-color: #df4580;
+  height: 13rem;
+}
+
+.coinCard a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.whiteColor {
+  color: #fff;
+}
+
+.text {
+  font-weight: 300;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 10rem;
+  justify-content: center;
+}
+
+.searchBar {
+  width: 14rem;
+  height: 2rem;
+}
+
+.searchBtn {
+  width: 14rem;
+  height: 2rem;
+  background-color: #df4580;
+  color: #fff;
+  border: 1px solid #81284a;
+  cursor: pointer;
+}
+
+.coinDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bg-dark {
+  background-color: #df4580;
+  width: 100%;
+  text-align: center;
+  height: 3rem;
+  padding-top: 1rem;
+}
+
+.detailHeading {
+  height: 8rem;
+  padding-top: 3rem;
+}
+
+.loading {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.rightArrow {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.rightArrowImg {
+  margin-right: 10px;
+}
